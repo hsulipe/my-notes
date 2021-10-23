@@ -3,6 +3,9 @@
 ### Sumary
  - [Domains](#domains)
 
+### References
+[Exam guide](https://d1.awsstatic.com/training-and-certification/docs-sa-pro/AWS-Certified-Solutions-Architect-Professional_Exam-Guide.pdf)
+
 ### Domains
 
 | Domain                                                |  %  | Check  |
