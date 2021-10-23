@@ -10,7 +10,7 @@ The concept of this documentation is to try configuring nginx as an API gateway 
 The reason I'm doing this is purely out of curiosity and to learn more about Nginx. I don't even know if this is possible but I supose it is.
 
 ## References
-[Nginx - Beginner's Guide](https://nginx.org/en/docs/beginners_guide.html)
+[Nginx - Beginner's Guide](https://nginx.org/en/docs/beginners_guide.html) </br>
 [Nginx - Deploying Nginx as an API Gateway - Part 1](https://www.nginx.com/blog/deploying-nginx-plus-as-an-api-gateway-part-1/)
 
 ## Notes
