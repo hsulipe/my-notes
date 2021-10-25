@@ -36,4 +36,4 @@ After building and runing through the localhost, I could acess the nginx contain
 ```
 What I'm supossing it happened is that the nginx is searching for an static file in the directory `/usr/share/nginx/html/api/warehouse`. But this is not what I want, I want it to execute some javascript function. Having an similar behavior as an AWS API Gateway and an AWS Lambda function integration.
 
-After searching more on the web. I discorvered that under the hood AWS Lambda Functions use Firecracker REST-API to create an microVM with the function's CPU and memory settings. [Reference](https://blog.oliverjumpertz.dev/how-aws-lambda-works-under-the-hood)
+After searching more on the web. I discorvered that under the hood AWS Lambda Functions use Firecracker REST-API to create an microVM with the function's CPU and memory settings. [Reference](https://blog.oliverjumpertz.dev/how-aws-lambda-works-under-the-hood). This blog also tells me that I need to create a bootstrap code that will be waiting for requests to execute my handler function.
