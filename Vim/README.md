@@ -64,4 +64,5 @@ Commands:
 ## Markers
 
 ## References
-[Insert test into multiple lines at once](https://riptutorial.com/vim/example/7301/insert-text-into-multiple-lines-at-once)
+[Insert test into multiple lines at once](https://riptutorial.com/vim/example/7301/insert-text-into-multiple-lines-at-once)  
+[Vim Editor Modes Explained](https://www.freecodecamp.org/news/vim-editor-modes-explained/)
