@@ -19,3 +19,6 @@ Quick introduction about dynamodb features and concepts. Trying to summarize the
 - [scan](#scan)
 
 ## Cost and pricing
+
+## References
+[AWS.DynamoDB.DocumentClient](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB/DocumentClient.html)
