@@ -5,7 +5,11 @@
 
 ## Objective
 
-The main purpose of the Observer Pattern is to notify about any modification made on the observable objects. The observer pattern is composed by the following structures:
+The main purpose of the Observer Pattern is to notify about any modification made on the observable objects. 
+
+## Components
+
+The observer pattern is composed by the following structures:
 
 - Observable object</br>
     ```The main object of this pattern, is the object that can be observed by others and the one that contains the methods subscribe, unsubscribe and notify.```
@@ -17,3 +21,5 @@ The main purpose of the Observer Pattern is to notify about any modification mad
     ```An method to remove objects from the list of observers.```
 - notify method
     ```An method to notify all observers about the modification on the observable object.```
+
+## Example
