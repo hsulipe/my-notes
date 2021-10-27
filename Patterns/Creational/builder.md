@@ -10,13 +10,16 @@ Builder pattern separates the construction of a complex object from its represen
 
 ## Components
 
-- Builder
+- Builder Interface - Since vanilla javascript don't allow interfaces this will be removed from the example.
+- Concrete Builder
 - build method
+- buildPart methods
 - Generated object
 
-## Example
+## Examples
 
-```
+- Javascript
+```javascript
 let GameScoreBuilder = function () {
 
     let gameName;
@@ -55,6 +58,74 @@ const gameScore = new GameScoreBuilder()
     .build()
 ```
 
+- C#
+```C#
+interface IGameScoreBuilder {
+    IGameScoreBuilder setGameName();
+    IGameScoreBuilder setUserId();
+    IGameScoreBuilder setScore();
+    IGameScoreBuilder setCreationDate();
+}
+
+class GameScoreBuilder : IGameScoreBuilder {
+    private String GameName { get;set; }
+    private String UserId { get;set; }
+    private int Score { get;set; }
+    private DateTime CreationDate { get;set; }
+
+    GameScoreBuilder setGameName(name) {
+        this.GameName = name;
+        return this;   
+    }
+
+    GameScoreBuilder setUserId(userId) {
+        this.UserId = userId;
+        return this;   
+    }
+
+    GameScoreBuilder setScore(score) {
+        this.Score = score;
+        return this;   
+    }
+
+    GameScoreBuilder setCreationDate(creationDate) {
+        this.CreationDate = creationDate;
+        return this;   
+    }
+
+    GameScore Build () {
+        return new GameScore(this.GameName, this.UserId, this.Score, this.CreationDate);
+    }
+}
+
+class GameScore {
+    private String GameName { get;set; }
+    private String UserId { get;set; }
+    private int Score { get;set; }
+    private DateTime CreationDate { get;set; }
+
+    public GameScore (name, userId, score, creationDate) {
+        this.GameName = name;
+        this.UserId = userId; 
+        this.Score = score;
+        this.CreationDate = creationDate;
+    }
+}
+
+class Program {
+    static void Main(string[] args)
+    {
+        IGameScoreBuilder builder = new GameScoreBuilder();
+        GameScore score = builder.setGameName("Valorant")
+            .setScore(100)
+            .setUserId("1234-4321")
+            .setCreationDate(DateTime.Now)
+            .Build();
+    }
+}
+```
+
 
 ## References
-[Builder Pattern](https://zetcode.com/javascript/builderpattern/)
+[Builder Pattern](https://zetcode.com/javascript/builderpattern/)  
+Design Patterns, by The Gang of four
