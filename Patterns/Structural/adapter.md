@@ -125,6 +125,6 @@ class Program {
 
 ## References
 
-[Adapter Design Pattern](https://sourcemaking.com/design_patterns/adapter)
-[JavaScript Adapter](https://www.dofactory.com/javascript/design-patterns/adapter)
-Design Patterns, by The gang of four.
+[Adapter Design Pattern](https://sourcemaking.com/design_patterns/adapter)  
+[JavaScript Adapter](https://www.dofactory.com/javascript/design-patterns/adapter)  
+Design Patterns, by The gang of four.  
