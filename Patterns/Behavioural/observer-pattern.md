@@ -10,7 +10,7 @@ The main purpose of the Observer Pattern is to notify about any modification mad
 
 The observer pattern is composed by the following structures:
 
-- Observable object</br>
+- Subject</br>
     - The main object of this pattern, is the object that can be observed by others and the one that contains the methods subscribe, unsubscribe and notify.
 - Observers property</br>
     - An list of objects that will be notified when the observable object changes.
@@ -26,7 +26,7 @@ The observer pattern is composed by the following structures:
 
 - JavaScript
 ```javascript
-class Observable {
+class Subject {
     observers;
     constructor() {
         this.observers = [];
@@ -46,7 +46,7 @@ class Observable {
 }
 
 function main () {
-    const ob = new Observable()
+    const ob = new Subject()
 
     const print1 = data => { console.log(`Sub_1: ${data}`) }
     const print2 = data => { console.log(`Sub_2: ${data}`) }
@@ -61,7 +61,47 @@ function main () {
 
 - C#
 ```c#
+abstract class Subject {
+    public Subject () { }
+    private readonly Observer[] observers = new List<Observer>();
 
+    public void Subscribe (Observer o) {
+        observers.Add(o);
+    } 
+
+    public void Unsubscribe (Observer o) {
+        observers.Remove(o);
+    }
+
+    public void Notify () {
+        foreach(Observer o in observers) {
+            o.Update(this);
+        }
+    }
+}
+
+abstract class Observer {
+    
+}
+```
+
+- C++
+```c++
+class Subject {
+    public: 
+        virtual ~Subject();
+
+        virtual Subscribe(Observer*);
+        virtual Unsubscribe(Observer*);
+    protected:
+        Subject();
+    private:
+        List<Observer*> *_observers;
+}
+
+void Subject::Subscribe(Observer* o) {
+
+}
 ```
 
 
