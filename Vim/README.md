@@ -48,6 +48,8 @@ Commands:
 - `/bar/` is regex to replace things with.
 - `/g` means global, otherwise it would only execute once per line.
 
+- `:e [filename]` opens a file.
+
 ## Writing multiple lines
 
 1 - Press `Ctrl + v` to enter into visual block mode.  
@@ -65,4 +67,5 @@ Commands:
 
 ## References
 [Insert test into multiple lines at once](https://riptutorial.com/vim/example/7301/insert-text-into-multiple-lines-at-once)  
-[Vim Editor Modes Explained](https://www.freecodecamp.org/news/vim-editor-modes-explained/)
+[Vim Editor Modes Explained](https://www.freecodecamp.org/news/vim-editor-modes-explained/)  
+[Popular Vim Commands](https://www.keycdn.com/blog/vim-commands)
