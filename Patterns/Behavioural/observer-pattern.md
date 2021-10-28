@@ -11,15 +11,15 @@ The main purpose of the Observer Pattern is to notify about any modification mad
 The observer pattern is composed by the following structures:
 
 - Subject</br>
-    - The main object of this pattern, is the object that can be observed by others and the one that contains the methods subscribe, unsubscribe and notify.
+    - The main object of this pattern, is the object that can be observed by others and the one that contains the methods subscribe, unsubscribe and notify.  
 - Observers property</br>
-    - An list of objects that will be notified when the observable object changes.
+    - An list of objects that will be notified when the observable object changes.  
 - subscribe method</br>
-    - An method to add objects to the list of observers.
+    - An method to add objects to the list of observers.  
 - unsubscribe method</br>
-    - An method to remove objects from the list of observers.
+    - An method to remove objects from the list of observers.  
 - notify method
-    - An method to notify all observers about the modification on the observable object.
+    - An method to notify all observers about the modification on the observable object.  
 
 
 ## Example
@@ -65,15 +65,15 @@ abstract class Subject {
     public Subject () { }
     private readonly Observer[] observers = new List<Observer>();
 
-    public void Subscribe (Observer o) {
+    public virtual void Subscribe (Observer o) {
         observers.Add(o);
     } 
 
-    public void Unsubscribe (Observer o) {
+    public virtual void Unsubscribe (Observer o) {
         observers.Remove(o);
     }
 
-    public void Notify () {
+    public virtual void Notify () {
         foreach(Observer o in observers) {
             o.Update(this);
         }
@@ -81,9 +81,49 @@ abstract class Subject {
 }
 
 abstract class Observer {
-    
+    public Observer() { }
+    abstract void Update (Subject s);
+}
+
+class ConcreteSubject : Subject {
+    public ConcreteSubject() { }
+
+    public void WaitAndNotify() {
+        Thread.Sleep(5000);
+        this.Notify();
+    }
+}
+
+class ConcreteObserver : Observer {
+    private readonly string Id;
+    private readonly string Text;
+    public ConcreteObserver (int id, string text) {
+        this.Id = id;
+        this.Text = text;
+    }
+    public void Update (Subject s) {
+        Console.WriteLine($"Observer_{this.Id}: {this.Text}")
+    }
+}
+
+class Program {
+    static void Main(string[] args)
+    {
+        Subject subject = new ConcreteSubject();
+
+        Observer observer1 = new ConcreteObserver(1, "Hello World!");
+        Observer observer2 = new ConcreteObserver(2, "Hello World!");
+        Observer observer3 = new ConcreteObserver(3, "Hello World!");
+
+        subject.subscribe(observer1);
+        subject.subscribe(observer2);
+        subject.subscribe(observer3);        
+        
+        subject.WaitAndNotify();
+    }
 }
 ```
+_After implementing the C# solution I realized that the names Attach and Detach better represents the oparation than subscribe and unsubscribe. The way that is represented on the Design Pattern book._
 
 - C++
 ```c++
@@ -93,15 +133,67 @@ class Subject {
 
         virtual Subscribe(Observer*);
         virtual Unsubscribe(Observer*);
+
     protected:
         Subject();
+
     private:
         List<Observer*> *_observers;
 }
 
 void Subject::Subscribe(Observer* o) {
-
+    _observers->Append(o);
 }
+
+void Subject::Unsubscribe(Observer* o) {
+    _observers->Remove(o);
+}
+
+void Subject::Notify() {
+    ListIterator<Observer*> i(_observers);
+
+    for(i.First(); !i.Done(); i.Next()) {
+        i.CurrentItem()->Update(this);
+    }
+}
+
+class Observer {
+    public: 
+        virtual ~Observer();
+        virtual void Update(Subject* s) = 0;
+    
+    protected:
+        Observer();
+}
+
+class ConcreteSubject : public Subject {
+    public:
+        virtual ~ConcreteSubject();
+        virtual void WaitAndNotify();
+    
+    protected:
+        ConcreteSubject();
+}
+
+void ConcreteSubject::WaitAndNotify() {
+    sleep(5000);
+    Notify(); 
+}
+
+class ConcreteObserver : public Observer {
+    public:
+        ConcreteObserver(int id);
+        virtual ~ConcreteObserver();
+
+        virtual void Update (Subject*);
+    private:
+        int _id;
+}
+
+void ConcreteSubject::Update () {
+    std::string s = std::to_string(this._id);
+    std::cout << "Observer_" << s << ": Hello World!";
+} 
 ```
 
 
