@@ -25,6 +25,8 @@ The observer pattern is composed by the following structures:
 ## Example
 
 - JavaScript  
+
+
 ```javascript
 class Subject {
     observers;
@@ -59,7 +61,8 @@ function main () {
 }
 ```
 
-- C#
+- C#  
+
 
 ```c#
 abstract class Subject {
@@ -124,9 +127,12 @@ class Program {
     }
 }
 ```
+
 _After implementing the C# solution I realized that the names Attach and Detach better represents the oparation than subscribe and unsubscribe. The way that is represented on the Design Pattern book._
 
-- C++
+- C++  
+
+
 ```c++
 class Subject {
     public: 

@@ -18,7 +18,9 @@ Builder pattern separates the construction of a complex object from its represen
 
 ## Examples
 
-- Javascript
+- Javascript  
+
+
 ```javascript
 let GameScoreBuilder = function () {
 
@@ -58,8 +60,10 @@ const gameScore = new GameScoreBuilder()
     .build()
 ```
 
-- C#
-```C#
+- C#  
+
+
+```c#
 interface IGameScoreBuilder {
     IGameScoreBuilder setGameName();
     IGameScoreBuilder setUserId();
