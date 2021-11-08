@@ -6,7 +6,7 @@ Explain some concepts about binary heaps. Talk about its definitions. Also imple
 
 ## Definition
 - Rules about Heaps
-    - The parent must be lower|greater than all children nodes.
+    - The parent must be lower/greater than all children nodes.
     - Is an binary tree.
     - Must be complete. Which means all nodes should have both left and right children. Except for the bottom level.
 
