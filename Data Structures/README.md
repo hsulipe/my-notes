@@ -1,8 +1,8 @@
 # Data Structures
 
 ## Links
-- [Linked Lists](Linked&#32;List/README.html)
-- [Stack](Stack/README.md)
-- [Queue](Queue/README.md)
-- [Trees](Trees/README.md)
-- [Heap](Heap/README.md)
+- [Linked Lists](Linked&#32;List/)
+- [Stack](Stack/)
+- [Queue](Queue/)
+- [Trees](Trees/)
+- [Heap](Heap/)
