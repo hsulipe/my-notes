@@ -6,8 +6,8 @@ Guardar um histórico de minhas anotações ao longo dos projetos e estudos que 
 
 ## Links
 
-- [Data Structures](Data&#32;Structures/README.html)
-- [Algorithms](Algorithms/routes.md)
-- [Math](Math/routes.md)
-- [Tools](Tools/routes.md)
-- [Design Patterns](Patterns/routes.md)
+- [Data Structures](Data&#32;Structures/)
+- [Algorithms](Algorithms/routes.html)
+- [Math](Math/routes.html)
+- [Tools](Tools/routes.html)
+- [Design Patterns](Patterns/routes.html)
