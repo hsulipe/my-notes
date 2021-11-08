@@ -3,7 +3,7 @@
 ## description
 
 Stacks and one of the first datastructures to be used, stack exists since the invention of the turing machines. The main concept of Stack is First in Last Out.
-
+It also can be used to create a queue.
 
 ## Implementation
 
@@ -41,6 +41,37 @@ class Stack<T> {
         return stack[stack.Count()]; 
     }
 }
+```
+
+- Python
+```python
+class Stack:
+    def __init__ (self, capacity):
+        self.capacity = capacity
+        self.stack_array = [0]*capacity
+        self.size = 0
+    
+    def append(data):
+        if size < capacity:
+            stack_array[size] = data
+            size += 1
+            return data
+        else:
+            return 0
+    
+    def pop():
+        if size == 0:
+            return 0
+
+        aux = stack_array[0]
+        size -= 1
+        int i = 0 
+        while i < size:
+            stack_array[i] = stack_array[i + 1]
+        return aux
+    
+    def peek():
+        return stack_array[0]
 ```
 
 ## Example

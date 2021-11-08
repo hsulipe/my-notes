@@ -77,16 +77,16 @@ class MinHeap<T> {
 
         int min_index = Key;
 
-        if(left_index < size && heapArray[left_index] < heapArray[smallest]) {
+        if(left_index < size && heapArray[left_index] < heapArray[min_index]) {
             smallest = left_index;
         }
-        if(right_index < size && heapArray[right_index] < heapArray[smallest]) {
+        if(right_index < size && heapArray[right_index] < heapArray[min_index]) {
             smallest = right_index;
         }
 
         if(smallest != key) {
-            Swap(ref heapArray[Key], ref heapArray[smallest]);
-            Heapify(smallest);
+            Swap(ref heapArray[Key], ref heapArray[min_index]);
+            Heapify(min_index);
         }
     }
 
