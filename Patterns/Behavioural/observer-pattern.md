@@ -10,21 +10,21 @@ The main purpose of the Observer Pattern is to notify about any modification mad
 
 The observer pattern is composed by the following structures:
 
-- Subject</br>
+- Subject  
     - The main object of this pattern, is the object that can be observed by others and the one that contains the methods subscribe, unsubscribe and notify.  
-- Observers property</br>
+- Observers property  
     - An list of objects that will be notified when the observable object changes.  
-- subscribe method</br>
+- subscribe method  
     - An method to add objects to the list of observers.  
-- unsubscribe method</br>
+- unsubscribe method  
     - An method to remove objects from the list of observers.  
-- notify method
+- notify method  
     - An method to notify all observers about the modification on the observable object.  
 
 
 ## Example
 
-- JavaScript
+- JavaScript  
 ```javascript
 class Subject {
     observers;
@@ -60,6 +60,7 @@ function main () {
 ```
 
 - C#
+
 ```c#
 abstract class Subject {
     public Subject () { }
