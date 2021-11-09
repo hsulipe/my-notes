@@ -4,15 +4,25 @@
 Explain some concepts about binary heaps. Talk about its definitions. Also implement an MinHeap and a MaxHeap using C#.
 
 
-## Definition
+## Description
 - Rules about Heaps
     - The parent must be lower/greater than all children nodes.
     - Is an binary tree.
     - Must be complete. Which means all nodes should have both left and right children. Except for the bottom level.
 
 
+## Pros
+
+- Always have an semi sorted structure.
+- Min or max values always accessible.
+- Both insertion and deletion have log*n complexity.
+
+## Cons
+
+- Complex code, not so simple to understand.
+
 ## Examples
-- C#
+- C#  
 
 ```c#
 class MinHeap<T> {
@@ -108,4 +118,4 @@ The Implementation to the max heap is the same the only modification is the comp
 
 ## References
 - [Binary Heap](https://www.geeksforgeeks.org/binary-heap/)
-- [IMPLEMENTANDO uma ÁRVORE BINÁRIA | Estruturas de dados #10](https://www.youtube.com/watch?v=6E169kShoNU)
+- [IMPLEMENTANDO uma ÁRVORE BINÁRIA Estruturas de dados #10](https://www.youtube.com/watch?v=6E169kShoNU)
