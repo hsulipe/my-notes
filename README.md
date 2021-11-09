@@ -7,17 +7,17 @@ Hello, My name is Felipe Hsu. I'm a back-end developer I'm very enthusiastic abo
 
 ## Work Expirience
 
-1 - Vizir Software Studio - Back-end Developer
-    - Ended: Still Here
-    - Started: 2021-02-11
+1 - Vizir Software Studio - Back-end Developer  
+    - Ended: Still Here  
+    - Started: 2021-02-11  
 
-2 - Lumen Games - Back-end Developer
-    - Ended: 2021-02-09
-    - Started: 2019-08-19
+2 - Lumen Games - Back-end Developer  
+    - Ended: 2021-02-09  
+    - Started: 2019-08-19  
 
-3 - SergipeTec - Back-end Developer Jr
-    - Ended: 2019-08-19
-    - Started: 2019-04-01
+3 - SergipeTec - Back-end Developer Jr  
+    - Ended: 2019-08-19  
+    - Started: 2019-04-01  
 
 ## Certifications
 
