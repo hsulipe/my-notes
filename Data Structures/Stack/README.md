@@ -5,6 +5,14 @@
 Stacks and one of the first datastructures to be used, stack exists since the invention of the turing machines. The main concept of Stack is First in Last Out.
 It also can be used to create a queue.
 
+## Complexity
+
+| Operation            | Complexity |
+|----------------------|------------|
+| Insertion on top     |     O(1)   |
+| Remove top element   |     O(1)   |
+| Access top element   |     O(1)   |
+
 ## Implementation
 
 - C#  

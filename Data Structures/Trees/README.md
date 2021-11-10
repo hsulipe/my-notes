@@ -4,8 +4,16 @@
 
 Birary tree is a special type of tree that instead of having multiple children, it has only two. One to the left and one to the right. Thats the reason why its called a Binary tree.
 
-### Height and Depth
+## Complexity
 
+| Operation  | Complexity     |
+|------------|----------------|
+| Insertion  |     O(log*n)   |
+| Deletion   |     O(log*n)   |
+| Access     |     O(log*n)   |
+
+
+### Height and Depth
 
 ```python
 def height(root):

@@ -1,8 +1,13 @@
 # Linked List
 
-## Description
+```mermaid
+graph LR;
+    A-->B;
+    B-->C;
+    C-->D;
+```
 
-![Diagram-1](Assets/linked-list-diagram-1.md)
+## Description
 
 ## Complexity
 
