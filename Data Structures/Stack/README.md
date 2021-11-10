@@ -7,7 +7,8 @@ It also can be used to create a queue.
 
 ## Implementation
 
-- C#
+- C#  
+
 ```c#
 class Stack<T> {
     Array<T> stack;
@@ -23,7 +24,7 @@ class Stack<T> {
         if(size >= n) {
             throw Error("Stack Overflow");
         }
-        stack.Add(value);
+        stack[stack.Length - 1] = value;
         size++;
     }
 
@@ -31,19 +32,20 @@ class Stack<T> {
         if(size == 0) {
             throw Error("Stack Empty");
         }
-        T value = stack[stack.Count()];
-        stack.Remove(value);
+        T value = stack[stack.Length - 1];
+        stack[stack.Length - 1] = 0;
         size--;
         return value;
     }
 
     public T Peek() {
-        return stack[stack.Count()]; 
+        return stack[stack.Length - 1];
     }
 }
 ```
 
-- Python
+- Python  
+
 ```python
 class Stack:
     def __init__ (self, capacity):
@@ -52,31 +54,31 @@ class Stack:
         self.size = 0
     
     def append(data):
-        if size < capacity:
-            stack_array[size] = data
-            size += 1
-            return data
-        else:
+        if size >= capacity:
             return 0
+        
+        stack_array[size] = data
+        size += 1
+        return data
     
     def pop():
         if size == 0:
             return 0
 
-        aux = stack_array[0]
         size -= 1
-        int i = 0 
-        while i < size:
-            stack_array[i] = stack_array[i + 1]
+        
+        aux = stack_array[size]
+        stack_array[size] = 0
+         
         return aux
     
     def peek():
-        return stack_array[0]
+        return stack_array[size - 1]
 ```
 
 ## Example
 
-- This purpose of this algorithm is to verify if all brackets are balanced. Wich means after a open bracket '(', '{' and '[', will be a closing bracket ')', '}' and ']' without they overlap.
+- This purpose of this algorithm is to verify if all brackets are balanced. Wich means after a open bracket `(`, `{` and `[`, will be a closing bracket `)`, `}` and `]` without they overlap.
 
 ```c#
 public static string isBalanced(string s)
@@ -103,7 +105,15 @@ public static string isBalanced(string s)
     return (stack.Count == 0)? true: false;
 }
 ```
-- Stacks can also be used to implement Queues and other data structures.
+
+- Stacks can also be used to implement Queues and other data structures. 
+
+
+## Problems
+
+[Balanced brackets](https://www.hackerrank.com/challenges/balanced-brackets/problem)  
+[Queue using two stacks](https://www.hackerrank.com/challenges/queue-using-two-stacks/problem)
+
 
 ## References
 

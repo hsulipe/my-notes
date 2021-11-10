@@ -10,15 +10,15 @@ The main purpose of the Observer Pattern is to notify about any modification mad
 
 The observer pattern is composed by the following structures:
 
-- Subject  
+- **Subject**  
     - The main object of this pattern, is the object that can be observed by others and the one that contains the methods subscribe, unsubscribe and notify.  
-- Observers property  
+- **Observers property**  
     - An list of objects that will be notified when the observable object changes.  
-- subscribe method  
+- **Subscribe method**  
     - An method to add objects to the list of observers.  
-- unsubscribe method  
+- **Unsubscribe method**  
     - An method to remove objects from the list of observers.  
-- notify method  
+- **Notify method**  
     - An method to notify all observers about the modification on the observable object.  
 
 
@@ -26,8 +26,7 @@ The observer pattern is composed by the following structures:
 
 - JavaScript  
 
-
-```javascript
+```js
 class Subject {
     observers;
     constructor() {
@@ -62,7 +61,6 @@ function main () {
 ```
 
 - C#  
-
 
 ```c#
 abstract class Subject {
@@ -132,8 +130,7 @@ _After implementing the C# solution I realized that the names Attach and Detach 
 
 - C++  
 
-
-```c++
+```cpp
 class Subject {
     public: 
         virtual ~Subject();
