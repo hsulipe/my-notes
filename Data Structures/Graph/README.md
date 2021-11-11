@@ -1,13 +1,6 @@
 # Graphs
 
-```mermaid
-graph TD;
-    A --> B;
-    C --> A;
-    B --> D;
-    B --> C;
-    C --> D;
-```
+![Graph](../../Assets/images/graph-diagram-1.png)
 
 ## Description
 

@@ -1,11 +1,6 @@
 # Linked List
 
-```mermaid
-graph LR;
-    A-->B;
-    B-->C;
-    C-->D;
-```
+![Linked List](../../Assets/images/linked-list-diagram-1.png)
 
 ## Description
 
