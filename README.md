@@ -5,7 +5,7 @@
 Hello, My name is **Felipe Hsu**. I'm a back-end developer I'm very enthusiastic about software and technologies in general. My hobbies are reading, watching Japanese anime, and doing sports like skateboarding and jogging. Also, I'm a huge adept at meditation and mindfulness.
 
 
-## Work Expirience
+## Work Experience
 
 1. **Vizir Software Studio** - Back-end Developer  
     - Ended: Still Here  
@@ -47,4 +47,4 @@ Hello, My name is **Felipe Hsu**. I'm a back-end developer I'm very enthusiastic
 - [Math](Math/)
 - [Tools](Tools/)
 - [Design Patterns](Patterns/)
-- [Books](Books/)
+- [Books](Books/)  
