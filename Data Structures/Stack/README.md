@@ -116,6 +116,40 @@ public static string isBalanced(string s)
 
 - Stacks can also be used to implement Queues and other data structures.
 
+```c#
+class Queue {
+    public Stack<int> front;
+    public Stack<int> rear;
+    
+    public Queue () {
+        this.front = new Stack<int>();
+        this.rear = new Stack<int>();
+    }
+    
+    public void Enqueue(int data) {
+        rear.Push(data);
+    }
+    
+    public int Dequeue() {
+        if(front.Count == 0) {
+            for(int i = rear.Count; i > 0 ; i--) {
+                front.Push(rear.Pop());
+            }
+        }
+        return front.Pop();   
+    }
+    
+    public int Peek() {
+        if(front.Count == 0) {
+            for(int i = rear.Count; i > 0 ; i--) {
+                front.Push(rear.Pop());
+            }
+        }
+        return front.Peek();   
+    }
+}
+```
+
 ## Problems
 
 [Balanced brackets](https://www.hackerrank.com/challenges/balanced-brackets/problem)  
