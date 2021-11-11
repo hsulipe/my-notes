@@ -114,14 +114,12 @@ public static string isBalanced(string s)
 }
 ```
 
-- Stacks can also be used to implement Queues and other data structures. 
-
+- Stacks can also be used to implement Queues and other data structures.
 
 ## Problems
 
 [Balanced brackets](https://www.hackerrank.com/challenges/balanced-brackets/problem)  
 [Queue using two stacks](https://www.hackerrank.com/challenges/queue-using-two-stacks/problem)
-
 
 ## References
 

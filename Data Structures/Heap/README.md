@@ -1,15 +1,15 @@
 # Binary Tree
 
 ## Objective
+
 Explain some concepts about binary heaps. Talk about its definitions. Also implement an MinHeap and a MaxHeap using C#.
 
-
 ## Description
-- Rules about Heaps
-    - The parent must be lower/greater than all children nodes.
-    - Is an binary tree.
-    - Must be complete. Which means all nodes should have both left and right children. Except for the bottom level.
 
+- Rules about Heaps
+    1. The parent must be lower/greater than all children nodes.
+    2. Is an binary tree.
+    3. Must be complete. Which means all nodes should have both left and right children. Except for the bottom level.
 
 ## Pros
 
@@ -22,6 +22,7 @@ Explain some concepts about binary heaps. Talk about its definitions. Also imple
 - Complex code, not so simple to understand.
 
 ## Examples
+
 - C#  
 
 ```c#
@@ -117,5 +118,6 @@ class MinHeap<T> {
 The Implementation to the max heap is the same the only modification is the comparison operator.
 
 ## References
+
 - [Binary Heap](https://www.geeksforgeeks.org/binary-heap/)
 - [IMPLEMENTANDO uma ÁRVORE BINÁRIA Estruturas de dados #10](https://www.youtube.com/watch?v=6E169kShoNU)

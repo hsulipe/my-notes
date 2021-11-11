@@ -17,14 +17,13 @@ graph LR;
 | Deletion  |     O(1)*  |
 | Access    |     O(n)   |
 
-
 ## Implementation
+
 - C#  
 
 ```c#
 
 ```
-
 
 - Python 1st
 
@@ -93,6 +92,7 @@ class Node:
         self.value = value
         self.next = None
 ```
+
 ## References
 
-- [Linked List Data Structure](https://www.geeksforgeeks.org/data-structures/linked-list/)
+- [Linked List Data Structure](https://www.geeksforgeeks.org/data-structures/linked-list/)  

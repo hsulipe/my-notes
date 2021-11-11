@@ -2,10 +2,8 @@
 
 ## Description
 
-
 Queues are very commonly used data structures. They are very useful to maintain the order of objects.
 The main rule about queues is First in First out. Wich means that the first object to be inserted into the queue is the first object to be removed.
-
 
 ## Complexity
 
@@ -14,7 +12,6 @@ The main rule about queues is First in First out. Wich means that the first obje
 | Insertion on bottom  |     O(1)   |
 | Remove top element   |     O(1)   |
 | Access top element   |     O(1)   |
-
 
 ## Implementations
 
@@ -46,8 +43,8 @@ class Queue<T> {
 
 ## Utilization
 
-- BFS: Bread-first-search
-    - Used to verify the distance from one node to all other nodes in a graph.
+- BFS: Bread-first-search  
+    1. Used to verify the distance from one node to all other nodes in a graph.
 
 ```c#
 public static int[] BreadFirstSearch(Graph g, int s_index) {
@@ -81,4 +78,5 @@ public static int[] BreadFirstSearch(Graph g, int s_index) {
 ```
 
 ## References
+
 - [Queue Data Structure](https://www.geeksforgeeks.org/queue-data-structure/)

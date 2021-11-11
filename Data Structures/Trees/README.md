@@ -12,7 +12,6 @@ Birary tree is a special type of tree that instead of having multiple children, 
 | Deletion   |     O(log*n)   |
 | Access     |     O(log*n)   |
 
-
 ### Height and Depth
 
 ```python
@@ -26,7 +25,6 @@ def height(root):
     
     return max(height(root.left), height(root.right)) + 1
 ```
-
 
 ### Level Order
 
@@ -48,4 +46,5 @@ def levelOrder(root):
 ```
 
 ## References
+
 - [Binary trees](https://www.geeksforgeeks.org/binary-tree-data-structure/)

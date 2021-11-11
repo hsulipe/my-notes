@@ -11,10 +11,11 @@ graph TD;
 
 ## Description
 
-
 ## Complexity
 
 ## Implementation
+
+## DFS - Depth-first-search
 
 ## BFS - Bread-first-search
 
