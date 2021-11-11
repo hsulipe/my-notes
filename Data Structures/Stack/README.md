@@ -17,72 +17,72 @@ It also can be used to create a queue.
 
 - C#  
 
-```c#
-class Stack<T> {
-    Array<T> stack;
-    int capacity;
-    int size;
-    public Stack(int n) {
-        this.stack = new Array<T>(n)
-        this.capacity = n;
-        this.size = 0;
-    }
-
-    public void Append(T value) {
-        if(size >= n) {
-            throw Error("Stack Overflow");
+    ```c#
+    class Stack<T> {
+        Array<T> stack;
+        int capacity;
+        int size;
+        public Stack(int n) {
+            this.stack = new Array<T>(n)
+            this.capacity = n;
+            this.size = 0;
         }
-        stack[stack.Length - 1] = value;
-        size++;
-    }
 
-    public T Pop() {
-        if(size == 0) {
-            throw Error("Stack Empty");
+        public void Append(T value) {
+            if(size >= n) {
+                throw Error("Stack Overflow");
+            }
+            stack[stack.Length - 1] = value;
+            size++;
         }
-        T value = stack[stack.Length - 1];
-        stack[stack.Length - 1] = 0;
-        size--;
-        return value;
-    }
 
-    public T Peek() {
-        return stack[stack.Length - 1];
+        public T Pop() {
+            if(size == 0) {
+                throw Error("Stack Empty");
+            }
+            T value = stack[stack.Length - 1];
+            stack[stack.Length - 1] = 0;
+            size--;
+            return value;
+        }
+
+        public T Peek() {
+            return stack[stack.Length - 1];
+        }
     }
-}
-```
+    ```
 
 - Python  
 
-```python
-class Stack:
-    def __init__ (self, capacity):
-        self.capacity = capacity
-        self.stack_array = [0]*capacity
-        self.size = 0
-    
-    def append(data):
-        if size >= capacity:
-            return 0
+    ```python
+    class Stack:
+        def __init__ (self, capacity):
+            self.capacity = capacity
+            self.stack_array = [0]*capacity
+            self.size = 0
         
-        stack_array[size] = data
-        size += 1
-        return data
-    
-    def pop():
-        if size == 0:
-            return 0
+        def append(data):
+            if size >= capacity:
+                return 0
+            
+            stack_array[size] = data
+            size += 1
+            return data
+        
+        def pop():
+            if size == 0:
+                return 0
 
-        size -= 1
+            size -= 1
+            
+            aux = stack_array[size]
+            stack_array[size] = 0
+            
+            return aux
         
-        aux = stack_array[size]
-        stack_array[size] = 0
-         
-        return aux
-    
-    def peek():
-        return stack_array[size - 1]
-```
+        def peek():
+            return stack_array[size - 1]
+    ```
 
 ## Example
 
