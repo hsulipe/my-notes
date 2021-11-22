@@ -6,6 +6,14 @@
 
 Graph is mathematical structure used to model pairwise relations between objects. A graph is made of vertices connected by edges.
 
+## Complexity
+
+| Operation | Complexity     |
+|-----------|----------------|
+| Insertion |     O(log(n))  |
+| Deletion  |     O(log(n))  |
+| Access    |     O(log(n))  |
+
 ### Types of graphs
 
 - Directed graph
@@ -31,7 +39,7 @@ Graphs can be represented computationally by the usage of an adjacency list or a
     |   A  | adjacent to |    B     |
     |   B  | adjacent to |  C,D     |
     |   C  | adjacent to |  A,D     |
-    |   D  | adjacent to |   --       |
+    |   D  | adjacent to |   --     |
 
 - Graph 1 incidence matrix
 
@@ -41,8 +49,6 @@ Graphs can be represented computationally by the usage of an adjacency list or a
     | B | 0 | 0 | 1 | 1 |
     | C | 1 | 0 | 0 | 1 |
     | D | 0 | 0 | 0 | 0 |
-
-## Complexity
 
 ## Implementation
 
@@ -85,7 +91,10 @@ Also very similar to the BFS algorithm for trees. The only difference is the add
                     visited[i] = True
     ```
 
-## Dijsktra algorithm
+## Dijkstra algorithm
+
+Dijkstra's algorithm is very similar to the Breadth-first-algorithm. The main diferrence is that it is used mainly for weighted graphs and it's purpose is to find the lowest-cost path from one node to another.
+![Dijkstra](/Assets/images/Dijkstra_Animation.gif)
 
 ## References
 
@@ -94,3 +103,4 @@ Also very similar to the BFS algorithm for trees. The only difference is the add
 [Deph-first-search](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)  
 [Breadth-first-search](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)  
 [Incidence Matrix](http://https://en.wikipedia.org/wiki/Incidence_matrix)  
+[Algoritmo de Dijkstra](https://pt.wikipedia.org/wiki/Algoritmo_de_Dijkstra)

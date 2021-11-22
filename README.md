@@ -25,16 +25,16 @@ Hello, My name is **Felipe Hsu**. I'm a back-end developer I'm very enthusiastic
 
 ## Road Map
 
-| Name                       | DeadLine   | Status |
-|----------------------------|------------|--------|
-| Graphs                     | 2021-11-12 | WIP    |
-| Tries                      | 2021-11-19 | ToDo   |
-| Laplace Transformation     | 2021-11-26 | ToDo   |
-| Fourier Transformation     | 2021-12-03 | ToDo   |
-| Euclid's Theorem           | 2021-12-10 | ToDo   |
-| Arithimetic Progression    | 2021-12-17 | ToDo   |
-| Geometric Progression      | 2021-12-24 | ToDo   |
-| Chain of Responsability    | 2021-12-31 | ToDo   |
+| Name                       | DeadLine   | Status  |
+|----------------------------|------------|---------|
+| Graphs                     | 2021-11-12 | WIP     |
+| Tries                      | 2021-12-03 | DELAYED |
+| Laplace Transformation     | 2021-11-26 | ToDo    |
+| Fourier Transformation     | 2021-12-03 | ToDo    |
+| Euclid's Theorem           | 2021-12-10 | ToDo    |
+| Arithimetic Progression    | 2021-12-17 | ToDo    |
+| Geometric Progression      | 2021-12-24 | ToDo    |
+| Chain of Responsability    | 2021-12-31 | ToDo    |
 
 ## Notes
 
